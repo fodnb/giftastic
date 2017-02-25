@@ -1,0 +1,71 @@
+html {
+    background: ghostwhite;
+}
+
+body {
+    width: 960px;
+    max-width: 100%;
+    background: ghostwhite;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+button {
+    background: ;
+   /* width: 120px;
+    height: 120px;*/
+}
+
+fieldset {
+    border: 1px solid black;
+}
+
+#animalH1{
+	margin:0;
+	height: 100px;
+	padding: 30px;
+	font-size: 48px;
+	background: black;
+	color: slategrey: ;
+	font-family: fantasy;
+	text-align: center;
+	letter-spacing: 1.5px;
+	text-shadow: 2px 2px #4aaaa5;
+
+}
+
+#animalButtons {
+    /*padding: 20px;*/
+    background: slategrey;
+}
+
+.animal {
+    margin: 20px;
+    /*height: 50px;*/
+    border: 2px solid #48D1CC;
+    font-family: fantasy;
+    letter-spacing: 1.1px;
+    text-shadow: 1px 1px #48D1CC;
+}
+
+form {
+    font-family: fantasy;
+    font-size: 24px;
+    letter-spacing: 1.5px;
+    text-shadow: 2px 2px grey;
+}
+img{
+	/*margin: 100px;*/
+	
+	height: 200px;
+	width: 200px;
+	float: left;
+}
+
+#animals{
+	
+}
+h2 {
+	/*margin: 0 auto;*/
+}
+
