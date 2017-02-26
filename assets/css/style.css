@@ -56,16 +56,38 @@ form {
 }
 img{
 	/*margin: 100px;*/
-	
+	margin: 10px;
 	height: 200px;
 	width: 200px;
-	float: left;
+    border: 1px solid black;
+
 }
 
 #animals{
+ /*   margin: 0 auto;
+    overflow: auto;*/
+    margin: 0;
+    align-content: center;
 	
 }
 h2 {
 	/*margin: 0 auto;*/
 }
+/*p{
+    height: 50px;
+    position: fixed;
+    bottom: -10px;
+}*/
+#animalDiv {
+    /*margin-top: 20px;*/
+    /*border: 1px solid slategray;*/
+    width: 33.33%;
+    overflow: auto;
+    float: left;
+    text-align: center;
+    /*margin: 10px;*/
+}
 
+#addAnimal{
+    margin-bottom: 20px;
+}
