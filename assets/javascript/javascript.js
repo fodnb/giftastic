@@ -35,6 +35,7 @@ $(document).ready(function() {
         $("#animal-input").val(""); // here we clear out the form so that we don't have to manually delete the info in we previously placed
         makeButtons(); // here we substantiate the topics array into buttons..  see function
     }else{
+        alert("Please Enter An Animal");
 
     }
 
