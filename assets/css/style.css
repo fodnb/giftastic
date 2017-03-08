@@ -10,10 +10,13 @@ body {
     box-sizing: border-box;
 }
 
+input{
+    width: 30%;
+    margin: 10px 10px 10px 0;
+}
+
 button {
     background: ;
-   /* width: 120px;
-    height: 120px;*/
 }
 
 fieldset {
@@ -35,13 +38,11 @@ fieldset {
 }
 
 #animalButtons {
-    /*padding: 20px;*/
     background: slategrey;
 }
 
 .animal {
     margin: 20px;
-    /*height: 50px;*/
     border: 2px solid #48D1CC;
     font-family: fantasy;
     letter-spacing: 1.1px;
@@ -55,7 +56,6 @@ form {
     text-shadow: 2px 2px grey;
 }
 img{
-	/*margin: 100px;*/
 	margin: 10px;
 	height: 200px;
 	width: 200px;
@@ -64,30 +64,19 @@ img{
 }
 
 #animals{
- /*   margin: 0 auto;
-    overflow: auto;*/
     margin: 0;
     align-content: center;
 	
 }
-h2 {
-	/*margin: 0 auto;*/
-}
-/*p{
-    height: 50px;
-    position: fixed;
-    bottom: -10px;
-}*/
+
 #animalDiv {
-    /*margin-top: 20px;*/
-    /*border: 1px solid slategray;*/
     width: 33.33%;
     overflow: auto;
     float: left;
     text-align: center;
-    /*margin: 10px;*/
+    
 }
 
 #addAnimal{
-    margin-bottom: 20px;
+    margin-bottom: 20px;  
 }

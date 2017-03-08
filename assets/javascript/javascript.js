@@ -22,15 +22,22 @@ $(document).ready(function() {
 
     $("#addAnimal").on("click", function() {
         event.preventDefault(); //this stops the value being entered without wanting it to
+
         var animalBut = $("#animal-input").val().trim(); // when we click on the submit button this adds a variable we can manipulate
-        for(i = 0; i< animalBut.length; i++){
-        animalBut = animalBut.replace(" ", "+"); // this allows us to add spaces in our text so we can still search gifs otherwise it just searches the first word or searches incorrectly
+        
+        if(animalBut.length > 0){
+        for (i = 0; i < animalBut.length; i++) {
+            animalBut = animalBut.replace(" ", "+"); // this allows us to add spaces in our text so we can still search gifs otherwise it just searches the first word or searches incorrectly
         }
         animalBut = animalBut.toUpperCase();
         console.log(animalBut.length)
         topics.push(animalBut); // here we're pushing the entered button into the topics array so that the button is displayed on the screen
         $("#animal-input").val(""); // here we clear out the form so that we don't have to manually delete the info in we previously placed
         makeButtons(); // here we substantiate the topics array into buttons..  see function
+    }else{
+
+    }
+
 
     });
 
@@ -68,45 +75,40 @@ $(document).ready(function() {
                 newDiv.attr("id", "animalDiv");
                 newDiv.append(newP);
                 newDiv.append(newImage);
-                $("#animals").append(newDiv);                          
+                $("#animals").append(newDiv);
 
             }
 
-      
-     
-    });
 
 
-               
-              
-
-}
-
-  function gifClick() {
-      var state = $(this).attr("data-state");
-      console.log(this);
-if ($(this).attr("data-state") === "still") {
-  
-        $(this).attr("src", $(this).attr("data-animate"));
-        $(this).attr("data-state", "animate");
-      } 
-      else{
-          $(this).attr("src", $(this).attr("data-still"));
-        $(this).attr("data-state", "still");
-      }
-
-}
-
-  
-  gifClick();
+        });
 
 
 
-$(document).on("click", ".animal", getAnimalGif); 
-$(document).on("click", "#animalAnimate", gifClick); 
+
+
+    }
+
+    function gifClick() {
+        var state = $(this).attr("data-state");
+        if ($(this).attr("data-state") === "still") {
+
+            $(this).attr("src", $(this).attr("data-animate"));
+            $(this).attr("data-state", "animate");
+        } else {
+            $(this).attr("src", $(this).attr("data-still"));
+            $(this).attr("data-state", "still");
+        }
+
+    }
+
+
+    gifClick();
+
+
+
+    $(document).on("click", ".animal", getAnimalGif);
+    $(document).on("click", "#animalAnimate", gifClick);
 
 
 });
-
-
-  
