@@ -11,7 +11,7 @@ $(document).ready(function() {
             aBut.attr("class", "btn-primary");
             aBut.attr("class", "animal");
             aBut.attr("data-name", topics[i]);
-            aBut.html(topics[i]);
+            aBut.html(topics[i].replace("+", " "));
             $("#animalButtons").append(aBut);
         }
     }
@@ -25,7 +25,7 @@ $(document).ready(function() {
 
         var animalBut = $("#animal-input").val().trim(); // when we click on the submit button this adds a variable we can manipulate
         
-        if(animalBut.length > 0){
+        if(animalBut.length >= 1){
         for (i = 0; i < animalBut.length; i++) {
             animalBut = animalBut.replace(" ", "+"); // this allows us to add spaces in our text so we can still search gifs otherwise it just searches the first word or searches incorrectly
         }
